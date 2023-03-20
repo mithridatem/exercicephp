@@ -6,16 +6,14 @@
         private $nom;
         private $longueur;
         private $largeur;
-        private $etage;
-
+        
         /*------------------------------------
                    Construteur         
         ------------------------------------*/
-        public function __construct($name, $long, $larg, $etage){
+        public function __construct($name, $long, $larg){
             $this->nom = $name;
             $this->longueur = $long;
             $this->largeur = $larg;
-            $this->etage = $etage;
         }
         /*------------------------------------
                    Getter and Setter         
@@ -29,9 +27,7 @@
         public function getLargeur(){
             return $this->largeur;
         }
-        public function getEtage(){
-            return $this->etage;
-        }
+        
         public function setNom($name){
             $this->nom = $name;
         }
@@ -41,17 +37,12 @@
         public function setLongueur($long){
             $this->longueur = $long;
         }
-        public function setEtage($etage){
-            $this->etage = $etage;
-        }
+       
         /*------------------------------------
                         Méthodes         
         ------------------------------------*/
         public function surface(){
-            return $this->largeur * $this->longueur*$this->etage;
-        }
-        public function __toString(){
-            return $this->nom;
+            return $this->largeur * $this->longueur;
         }
     }
 
