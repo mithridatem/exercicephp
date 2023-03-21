@@ -7,4 +7,6 @@
     echo '<p> La surface de l\'habitation : '.$villa->getNom().' 
     est de : '.$villa->surface().' m²</p>';
     echo $villa;
+
+    echo 'resultat : '.Maison::test();
 ?>

@@ -53,6 +53,8 @@
         public function __toString(){
             return $this->nom;
         }
+        public static function test(){
+            return "ceci est une fonction statique";
+        }
     }
-
 ?>
